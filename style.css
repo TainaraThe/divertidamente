@@ -1,0 +1,83 @@
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
+body{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(214, 215, 216);
+
+}
+head{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 2em;
+
+}
+.container{
+    max-width: 500px;
+    margin: auto;
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    background-color: rgb(183, 168, 236);
+    margin-bottom: 2em;
+}
+img{
+    width: 100%;
+}
+
+.car div{
+    padding: 2em;
+}
+
+.card:nth-child(even) img{
+    order: 2;
+}
+.btn{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 2em;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+a{
+text-decoration: none;
+
+}
+.btn:hover{
+    background-color: rgba(25, 0, 250, 0.994);
+    color: white(5, 22, 250);
+    box-shadow: 2px;
+
+}
+.galeria{
+    margin: 2em;
+    display: flex;
+    height: 20em;
+    gap: 0.2em;
+}
+.galeria div{
+flex: 1;
+background-size: cover;
+background-position: top center;
+}
+.galeria div:hover{
+    flex: 3;
+    transition: all 1s cubic-bezier(.79,-0.02,.59,.4);
+    box-shadow: 25px 25px 15px black;
+}
+.galeria:hover div:not(:hover){
+filter:brightness(100%) contrast(100%) hue-rotate(360deg)
+
+}
